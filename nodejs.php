@@ -12,6 +12,7 @@
     $contentResult = $conn->query($contentQuery);
     if ($contentResult->num_rows > 0) {
         $row2 = $contentResult->fetch_row();
+        $pageTitle = $row2[1];
         $sideHeading = $row2[5];
         $mainContent = $row2[3];
     }

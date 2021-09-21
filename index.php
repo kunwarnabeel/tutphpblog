@@ -1,4 +1,5 @@
 <?php
+    $pageTitle="Home Page";
     include_once('header.php');
 ?>
 
