@@ -1,9 +1,8 @@
 <?php
     include_once('config.php');
     include_once('conn.php');
-    $sql = "SELECT title , slug FROM `category` WHERE `status`=1";
+    $sql = "SELECT title , slug FROM `category` WHERE `status`=1 order by orderBy asc";
     $result = $conn->query($sql);
-    $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
          
 ?>
 
